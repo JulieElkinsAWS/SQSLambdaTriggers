@@ -14,7 +14,7 @@
         "dynamodb:PutItem"
       ],
       "Effect": "Allow",
-      "Resource": "arn:aws:dynamodb:us-east-1:123456789012:table/Message"
+      "Resource": "arn:aws:dynamodb:us-east-1:*:table/Message"
     },
     {
       "Action": [
@@ -25,7 +25,7 @@
         "sqs:ReceiveMessage"
       ],
       "Effect": "Allow",
-      "Resource": "arn:aws:sqs:us-east-1:123456789012:Messages"
+      "Resource": "arn:aws:sqs:us-east-1:*:Messages"
     }
   ]
 }
